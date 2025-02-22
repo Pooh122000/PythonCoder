@@ -19,8 +19,42 @@
 -[main (root-commit) 6e8ca3c] Initial commit
  - 53 files changed, 127757 insertions(+)
 
-- git remote add origin https://github.com/your-username/Python-Projects.git
+PS C:\Users\admin\Desktop\Python> git remote set-url origin https://github.com/Pooh122000/PythonCoder.git    
+PS C:\Users\admin\Desktop\Python>  git push -u origin main
+To https://github.com/Pooh122000/PythonCoder.git
+ ! [rejected]        main -> main (fetch first)
 
-# git push -u origin master
-2. If prompted, enter your GitHub credentials.
+it got rejected so: Fetech first as there were few files in github repo and to merge files from local repo and github repo first fetch
+
+#PS C:\Users\admin\Desktop\Python> git fetch origin
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (6/6), 2.89 KiB | 51.00 KiB/s, done.
+From https://github.com/Pooh122000/PythonCoder
+ * [new branch]      main       -> origin/main
+
+# PS C:\Users\admin\Desktop\Python> git merge origin/main
+fatal: refusing to merge unrelated histories
+
+# PS C:\Users\admin\Desktop\Python> git merge --allow-unrelated-histories origin/main
+Merge made by the 'ort' strategy.
+ Git Instructions | 26 ++++++++++++++++++++++++++
+ README.md        | 29 +++++++++++++++++++++++++++++
+ 2 files changed, 55 insertions(+)
+ create mode 100644 Git Instructions
+ create mode 100644 README.md
+
+#PS C:\Users\admin\Desktop\Python> git push -u origin main
+Enumerating objects: 63, done.
+Counting objects: 100% (63/63), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (62/62), done.
+Writing objects: 100% (62/62), 24.21 MiB | 2.88 MiB/s, done.
+Total 62 (delta 27), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (27/27), done.
+To https://github.com/Pooh122000/PythonCoder.git
+   0b72f21..bf1fd79  main -> main
+branch 'main' set up to track 'origin/main'.
 
