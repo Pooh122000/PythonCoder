@@ -1,0 +1,26 @@
+# Here the git bash/ VS git codes are present:
+
+# PS C:\Users\admin\Desktop\Python> git version
+- git version 2.48.1.windows.1
+
+# PS C:\Users\admin\Desktop\Python> git init
+- Initialized empty Git repository in C:/Users/admin/Desktop/Python/.git/
+
+# PS C:\Users\admin\Desktop\Python> git add .
+- got a lot of warnings.
+- To avoid these warnings, you can configure your Git repository to use the correct line endings. Here are a few options:
+
+- 1. *Set the core.autocrlf configuration*: Run the following command in your terminal:
+#PS C:\Users\admin\Desktop\Python> git config --global core.autocrlf true
+
+   -  This will configure Git to automatically convert line endings to CRLF when you commit files.
+
+# PS C:\Users\admin\Desktop\Python> git commit -m "Initial commit"
+-[main (root-commit) 6e8ca3c] Initial commit
+ - 53 files changed, 127757 insertions(+)
+
+- git remote add origin https://github.com/your-username/Python-Projects.git
+
+# git push -u origin master
+2. If prompted, enter your GitHub credentials.
+
